@@ -41,6 +41,10 @@
         <a href="{{ route('data') }}" class="hover:text-yellow-200 transition duration-200">Data Pendaftaran</a>
       </li>
       <li>
+        <a class="nav-link" href="{{ route('ekskul') }}">Ekskul</a>
+      </li>
+
+      <li>
         <a href="{{ route('filament.admin.auth.login') }}"
            class="bg-white text-pink-700 font-bold px-4 py-2 rounded-md hover:bg-yellow-200 transition duration-200">
           Login Admin

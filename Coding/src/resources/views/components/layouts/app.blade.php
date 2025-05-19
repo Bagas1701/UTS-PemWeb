@@ -28,14 +28,29 @@
  </head>
  <body>
   <header>
-   <nav class="flex items-center justify-between px-8 py-4" style="background: linear-gradient(90deg, #d92f6e 0%, #dba94a 100%)">
+  <nav class="flex items-center justify-between px-8 py-4" style="background: linear-gradient(90deg, #d92f6e 0%, #dba94a 100%)">
     <div class="flex items-center space-x-2">
-     <img alt="White airplane icon" class="w-8 h-8" height="64" src="../front/Logo.png" width="64"/>
-     <span class="font-montserrat font-extrabold text-white text-xl select-none">
-      Ekskul
-     </span>
+      <img src="/front/Logo.png" alt="Logo Ekskul" class="w-8 h-8" />
+      <span class="font-montserrat font-extrabold text-white text-xl select-none">Ekskul</span>
     </div>
-  </header>
+    <ul class="flex space-x-6 text-white font-semibold text-sm">
+      <li>
+        <a href="{{ route('home') }}" class="hover:text-yellow-200 transition duration-200">Home</a>
+      </li>
+      <li>
+        <a href="{{ route('data') }}" class="hover:text-yellow-200 transition duration-200">Data Pendaftaran</a>
+      </li>
+      <li>
+        <a href="{{ route('filament.admin.auth.login') }}"
+           class="bg-white text-pink-700 font-bold px-4 py-2 rounded-md hover:bg-yellow-200 transition duration-200">
+          Login Admin
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+
   
  {{ $slot }}
 

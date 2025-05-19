@@ -1,0 +1,13 @@
+@startuml
+title Flowchart Pendaftaran Ekskul - Opsi Manual
+
+start
+: Siswa mengisi Google Form;
+: Data masuk ke Google Sheets;
+: Admin membuka Google Sheets;
+: Admin login ke Laravel dashboard;
+: Admin input manual data siswa;
+: Data tersimpan di database;
+stop
+
+@enduml

@@ -1,0 +1,24 @@
+@startuml
+title Alur Pendaftaran Ekstrakurikuler Murid Baru
+
+actor Siswa
+actor "Admin TU" as Admin
+
+rectangle "Google Form" as Form {
+}
+
+database "Google Sheets" as Sheets
+
+Siswa -> Form : Mengisi Formulir
+Form -> Sheets : Data Masuk
+
+Sheets <--> Admin : 2 Arah Integrasi
+
+rectangle "Sistem Laravel\n(Dashboard Admin)" as Laravel {
+  Admin --> Laravel : Login
+  Admin --> Laravel : Input Manual (Opsi 1)
+  Admin --> Laravel : Lihat Data Pendaftaran
+  Admin --> Laravel : Tarik Data Otomatis (Opsi 2)
+}
+
+@enduml

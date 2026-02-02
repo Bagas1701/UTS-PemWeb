@@ -121,8 +121,3 @@ Sesuai dengan analisis dokumen, sistem ini menggunakan **Opsi 1** untuk efisiens
 
 > **Note:** Proyek ini disusun sebagai pemenuhan tugas UTS mata kuliah Pemrograman Web.
 
-```
-
-Apakah Anda ingin saya menambahkan bagian penjelasan file struktur foldernya juga agar README-nya terlihat lebih profesional?
-
-```
